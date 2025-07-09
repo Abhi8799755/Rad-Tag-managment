@@ -1,4 +1,24 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyC2lwfMH_lvRZMWcdqlCd3wSkJ_-H2ZgNs",
+  authDomain: "redtagmanagement-9e2a9.firebaseapp.com",
+  projectId: "redtagmanagement-9e2a9",
+  storageBucket: "redtagmanagement-9e2a9.firebasestorage.app",
+  messagingSenderId: "265095516523",
+  appId: "1:265095516523:web:45d8df97952383f5677c2e",
+  measurementId: "G-PLJM034RBL"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 // Sample data storage (in a real app, this would be server-side)
 let redTags = [
